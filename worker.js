@@ -1,7 +1,7 @@
 //  اسکریپت ورکر برای ایجاد لینک ساب
 //  نمونه‌ی مسیرهایی که بعد از ساخت ورکر باید در بخش ساب اپ کلاینت خود وارد کنید به شکل زیر می‌باشد
-//  https://my-worker.my-id.workers.dev/sub
-//  https://my-worker.my-id.workers.dev/sub/162.159.135.87
+//  https://irancell1.vpnmobile65.workers.dev/sub
+//  https://irancell1.vpnmobile65.workers.dev/sub/162.159.135.87
 //  https://my-worker.my-id.workers.dev/sub/ip.my-domain.com
 //
 //  در صورتی که از دامنه‌ی شخصی برای ورکر استفاده می کنید هم به همین شکل، فقط به جای دامین ورکر از سابدامین خودتان استفاده کنید
@@ -14,10 +14,10 @@ const maxPerType = 50
 //  در صورتی که میخواهید کانفیگ‌های اصلی (قبل از ترکیب با ورکر) هم در خروجی آورده شود این متغیر را با عدد 1 مقداردهی کنید
 //  در صورتی که ورکر شما فیلتر نیست و یا از سابدامین شخصی برای ورکر استفاده می‌کنید بهتر است این متغیر مقدار 0 داشته باشد
 //  در صورتی که این مقدار صفر باشد تنها کانفیگ‌های ترکیب شده با ورکر در خروجی خواهد آمد
-const includeOriginalConfigs = 0
+const includeOriginalConfigs = 1
 
 //  در صورتی که خودتان کانفیگ هایی دارید و می‌خواهید فقط کانفیگ‌های خودتان در خروجی آورده شود، این متغیر را با عدد 1 مقداردهی کنید
-const onlyUseMyConfigs = 0
+const onlyUseMyConfigs = 1
 
 //  این بخش حاوی لینک ساب های تامین کننده‌ی کانفیک می باشد. نیازی نیست این قسمت تغییر داده شود
 const subLinks = [
@@ -39,8 +39,8 @@ const cnfLinks = [
 //  توجه داشته باشید که هر کانفیگ باید در یک خط و داخل گیومه آورده شود و انتهای آن ویرگول قرار داده شود
 //  سطر آخر نباید ویرگول در انتهای خود داشته باشد، مانند نمونه‌ی زیر. قبل از قراردادن کانفیگ‌های خود، نمونه ها را پاک کنید
 const myConfigs = [
-  // "vmess://....",
-  // "vmess://...."
+  // "vless://a27b8a02-955e-4cb7-b2d4-adb504af68a1@ia_net.mtn.fastvpn1934.shop:443?path=gunkfa&security=tls&encryption=none&host=arvan.internet4iran.org&fp=chrome&type=ws&sni=arvan.internet4iran.org#Internet4Iran-arvan-sample",
+  // "trojan://0e8ba699-832e-4e08-8c2e-cb7e05b43ee8@127.0.0.1:8080?security=tls&headerType=none&type=tcp#Total%3A+50+GB+%7C+Used%3A+6.3+GB+%7C+Expire%3A+2023-05-05"
 ]
 
 //  آی‌پی‌های تمیز یا دامین‌های تمیز هر اپراتوری که استفاده می‌کنید را اینجا بنویسید
